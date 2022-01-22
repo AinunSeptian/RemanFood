@@ -2,7 +2,7 @@ import React from 'react';
 import {ScrollView, StyleSheet, Text, View} from 'react-native';
 import {Button, Gap, Header, TextInput} from '../../components';
 
-const SignUp = () => {
+const SignUp = ({navigation}) => {
   return (
     <ScrollView showsVerticalScrollIndicator={false}>
       <View style={styles.page}>
@@ -24,7 +24,10 @@ const SignUp = () => {
           <Gap height={16} />
           <TextInput label="Password" placeholder="Type your password" />
           <Gap height={24} />
-          <Button text="Continue" />
+          <Button
+            text="Continue"
+            onPress={() => navigation.navigate('SignUpAddress')}
+          />
         </View>
       </View>
     </ScrollView>
