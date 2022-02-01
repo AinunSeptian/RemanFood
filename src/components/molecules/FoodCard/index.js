@@ -27,7 +27,7 @@ export default FoodCard;
 
 const styles = StyleSheet.create({
   container: {
-    width: 200,
+    width: 180,
     backgroundColor: 'white',
     borderRadius: 8,
     shadowColor: 'black',
@@ -39,9 +39,12 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     marginRight: 24,
   },
-  image: {width: 200, height: 140, resizeMode: 'cover'},
+  image: {width: 180, height: 120, resizeMode: 'cover'},
   content: {padding: 12},
-  text: {fontSize: 16, fontFamily: 'Poppins-Regular', color: '#020202'},
-  ratingConatiner: {flexDirection: 'row'},
-  starContainer: {flexDirection: 'row'},
+  text: {fontSize: 14, fontFamily: 'Poppins-Regular', color: '#020202'},
+  ratingConatiner: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  starContainer: {flexDirection: 'row', paddingRight: 4},
 });
